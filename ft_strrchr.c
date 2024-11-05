@@ -6,8 +6,24 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:46 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char *ft_strrchr(const char *s, int c)
+{
+    size_t i;
+
+    i = ft_strlen(s);
+    while (i >= 0)
+    {
+        if (s[i] == c)
+            return ((char *)s + i);
+        i--;
+    }
+    if (!c)
+        return ((char *)s + i);
+    return (NULL);
+}

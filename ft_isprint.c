@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:18:02 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int    ft_isprint(char *str)
+int    ft_isprint(char *str)
 {
     size_t    i;
 

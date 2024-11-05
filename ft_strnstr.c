@@ -6,8 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:52 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char *ft_strnstr(const char *big, const char *little, size_t len)
+{
+    
+} 
