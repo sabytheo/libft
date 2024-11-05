@@ -5,8 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 13:59:40 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 14:06:04 by tsaby            ###   ########.fr       */
+/*   Created: 2024/11/05 14:22:41 by tsaby             #+#    #+#             */
+/*   Updated: 2024/11/05 14:40:43 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+unsigned int    ft_isalpha(char *str)
+{
+     unsigned int    i;
+
+    i = 0;
+    if (str[i] == '\0')
+        return (1);
+    while (str[i] != '\0')
+    {
+        if ((str[i] >= 'A' && str[i] <= 'Z')
+            || (str[i] >= 'a' && str[i] <= 'z'))
+            i++;
+        else
+            return (0);
+    }
+    return (1);
+}
