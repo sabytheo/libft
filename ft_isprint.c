@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:18:02 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 15:19:09 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 15:53:25 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int    ft_isprint(char *str)
 {
-     unsigned int    i;
+    size_t    i;
 
     i = 0;
     if (str[i] == '\0')

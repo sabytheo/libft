@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:33:40 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 15:36:36 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 15:57:46 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int    ft_atoi(char *str)
 {
-    int    i;
+    size_t    i;
     int    value;
     int    sign;
 

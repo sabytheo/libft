@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:01:16 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 15:14:20 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 15:53:28 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int    ft_isdigit(char *str)
 {
-     unsigned int    i;
+    size_t    i;
 
     i = 0;
     if (str[i] == '\0')
