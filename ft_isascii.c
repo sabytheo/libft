@@ -6,9 +6,11 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:11:40 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 15:53:30 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int    ft_isascii(char *str)
 {

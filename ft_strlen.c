@@ -6,9 +6,11 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:19:41 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 15:53:24 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int    ft_strlen(char *str)
 {
