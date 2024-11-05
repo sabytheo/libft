@@ -6,9 +6,11 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:10:47 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 15:14:20 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/05 16:12:26 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int    ft_isalnum(char *str)
 {
