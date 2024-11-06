@@ -6,8 +6,20 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:05:12 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/06 11:46:59 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+size_t  ft_strlcpy(char *dst, const char *src, size_t size)
+{
+    size_t i;
+    size_t j;
+    
+    i = 0;
+    while (dst[i] && i < size)
+    {
+        
+    }
+}

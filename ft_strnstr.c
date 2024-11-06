@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:52 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/06 11:20:53 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,19 @@
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
-    
+    size_t i;
+    size_t j;
+
+    i = 0;
+
+    while (i < len && big[i])
+    {
+        j = 0;
+        while (i + j < len && big[i + j] == little[j] && little[j])
+            j++;
+        if (little[j] == '\0')
+            return((char*) big + i);
+        i++;              
+    }
+    return (NULL);
 } 
