@@ -6,8 +6,21 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:05:41 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/06 14:56:15 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*memset(void *s, int c, size_t n)
+{
+	char	*p;
+
+	p = (char *)s;
+	while (n > 0)
+	{
+		p[n -1] = c;
+		n--;
+	}
+	return (s);
+}
