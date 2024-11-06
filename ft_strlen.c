@@ -5,22 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/06 13:33:22 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/06 13:35:24 by tsaby            ###   ########.fr       */
+/*   Created: 2024/11/06 13:56:51 by tsaby             #+#    #+#             */
+/*   Updated: 2024/11/06 13:57:03 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
 
-size_t  ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    size_t i;
+	size_t  i;
 
-    i = 0;
+	i = 0;
 
-    while (str[i])
-    {
-        i++;
-    }
-    return (i);
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
 }
