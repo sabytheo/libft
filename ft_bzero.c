@@ -6,8 +6,20 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:12:21 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:12:28 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 12:42:15 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	size_t i;
+
+	i = 0;
+	while (i < n)
+	{
+		((char *)s)[i] = '\0';
+		i++;
+	}
+}
