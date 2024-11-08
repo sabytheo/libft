@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:33:40 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:07:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 10:12:27 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_atoi(char *str)
+int    ft_atoi(const char *str)
 {
     size_t    i;
     int    value;
