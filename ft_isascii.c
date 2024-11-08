@@ -6,25 +6,15 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:11:40 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 14:16:57 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_isascii(char *str)
+int	ft_isascii(int c)
 {
-    size_t    i;
-
-    i = 0;
-    if (str[i] == '\0')
-        return (1);
-    while (str[i] != '\0')
-    {
-        if (str[i] >= '0' && str[i] <= '127')
-            i++;
-        else
-            return (0);
-    }
-    return (1);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

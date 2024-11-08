@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:05:16 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 17:39:02 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 14:22:11 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ unsigned int    ft_strlcat(char *dest, char *src, unsigned int size)
         dest[j + i] = src[i];
         i++;
     }
-    if (j =! size)
+    if (j != size)
         dest[i + j] = '\0';
     return (dest[j] + ft_strlen(src));
 }

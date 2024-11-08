@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:36 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 16:49:12 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 14:31:56 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    ft_tolower(char* str)
+char    *ft_tolower(char *str)
 {
     size_t i;
 
@@ -24,5 +24,5 @@ char    ft_tolower(char* str)
             str[i] = str[i] + 32 ;
         i++;
     }
-    return (str); 
+    return (str);
 }

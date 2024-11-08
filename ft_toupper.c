@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:28 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 10:04:55 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 14:32:38 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    ft_tolower(char* str)
+char    *ft_tolower(char* str)
 {
     size_t i;
 

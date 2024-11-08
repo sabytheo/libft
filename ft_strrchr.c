@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:46 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 14:25:48 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    size_t i;
+    int i;
 
     i = ft_strlen(s);
     while (i >= 0)

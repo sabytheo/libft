@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:54:05 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 12:45:47 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/08 14:32:20 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
 int	ft_isalnum(char *str);
 int	ft_isalpha(char *str);
-int	ft_isascii(char *str);
+int	ft_isascii(int c);
 int	ft_isdigit(char *str);
 int	ft_isprint(char *str);
 void	*ft_memchr(const void *s, int c, size_t n);
@@ -37,7 +37,7 @@ size_t	ft_strlen(const char *str);
 int	ft_strncmp(char *s1, char *s2, unsigned int n);
 char *ft_strnstr(const char *big, const char *little, size_t len);
 char *ft_strchr(const char *s, int c);
-char	ft_tolower(char *str);
-char	ft_toupper(char *str);
+char	*ft_tolower(char *str);
+char	*ft_toupper(char *str);
 
 #endif

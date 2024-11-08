@@ -6,7 +6,7 @@
 #    By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 12:50:41 by tsaby             #+#    #+#              #
-#    Updated: 2024/11/08 13:51:26 by tsaby            ###   ########.fr        #
+#    Updated: 2024/11/08 14:07:30 by tsaby            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS		:= \
 					ft_strchr.c\
 					ft_strdup.c\
 					ft_strlcat.c\
-					ft_strlenc\
+					ft_strlen.c\
 					ft_strnstr.c\
 					ft_strrchr.c\
 					ft_tolower.c\
@@ -45,9 +45,9 @@ HEAD_D		:= .
 
 CFLAGS		:= -Wall -Wextra -Werror
 
-AR			:	ar rcs
+AR			:=	ar rcs
 
-NAME		:	libft.a
+NAME		:=	libft.a
 
 all			:	$(NAME)
 
