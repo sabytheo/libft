@@ -6,36 +6,33 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:33:40 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 10:12:27 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:46:00 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_atoi(const char *str)
+int	ft_atoi(const char *nptr)
 {
-    size_t    i;
-    int    value;
-    int    sign;
+	int	res;
+	int	signe;
+	int	i;
 
-    sign = 1;
-    value = 0;
-    i = 0;
-    if ((str[i] <= '~' && str[i] > '9') || (str[i] < '0' && str[i] > '-')
-        || (str[i] < '-' && str[i] > '+') || (str[i] < '+' && str[i] > ' '))
-        return (0);
-    while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-        i++;
-    while (str[i] == '-' || str[i] == '+')
-    {
-        if (str[i] == '-')
-            sign = -1;
-        i++;
-    }
-    while (str[i] <= '9' && str[i] >= '0')
-    {
-        value = value * 10 + (str[i] - '0');
-        i++;
-    }
-    return (value * sign);
+	signe = 1;
+	res = 0;
+	i = 0;
+	while (nptr[i] == 32 || (nptr[i] > 8 && nptr[i] < 14))
+		i++;
+	if (nptr[i] == '-' || nptr [i] == '+')
+	{
+		if (nptr[i] == '-')
+			signe *= -1;
+		i++;
+	}
+	while (nptr[i] > 47 && nptr[i] < 58)
+	{
+		res = res * 10;
+		res = res + nptr[i++] - 48;
+	}
+	return (res * signe);
 }

@@ -6,15 +6,15 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:01:16 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/11 12:56:23 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:57:34 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_isdigit(char str)
+int	ft_isdigit(char str)
 {
-            if (str >= '0' && str <= '9')
-            return (1);
-        return (0);
+	if (str >= '0' && str <= '9')
+		return (1);
+	return (0);
 }

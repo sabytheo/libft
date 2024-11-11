@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:34:36 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 16:35:16 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:59:31 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ int	ft_strlonlen(long nb)
 	}
 	return (i);
 }
-
-
 
 char    *ft_itoa(int n)
 {
@@ -67,8 +65,9 @@ char    *ft_itoa(int n)
         }
         return (str);
 }
-
+/*
 int	main ()
 {
 	printf("%s", ft_itoa(-2147483648));
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:12:10 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 12:49:14 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:47:48 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void *mall;
+	void	*mall;
 
 	mall = malloc(nmemb * size);
-
 	if (!mall)
 		return (mall);
 	ft_bzero(mall, nmemb * size);
