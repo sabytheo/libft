@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:33:49 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/11 11:14:05 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 12:18:30 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,3 +86,31 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim = ft_strldup(&((char *)s1)[start], end - start);
 	return (trim);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char *str = "   \t  Hello World!  \n  ";
+    char *set = " \t\n";
+    char *trimmed = ft_strtrim(str, set);
+
+    if (trimmed)
+    {
+        printf("Original: '%s'\n", str);
+        printf("Trimmed: '%s'\n", trimmed);
+        free(trimmed);
+    }
+    else
+    {
+        printf("Erreur d'allocation mémoire\n");
+    }
+
+    return 0;
+}*/
+
+/*Vérification des arguments : Si s1 ou set est NULL, on retourne NULL.
+Calcul du début de la portion trimée avec ft_strstart : On trouve l'indice du premier caractère qui ne fait pas partie de set.
+Calcul de la fin de la portion trimée avec ft_strend : On trouve l'indice du dernier caractère qui ne fait pas partie de set.
+Création d'une nouvelle chaîne trimée : On utilise ft_strldup pour allouer de la mémoire et copier la portion trimée.
+Retourner la chaîne trimée.*/

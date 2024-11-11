@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:05:16 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 14:22:11 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:16:34 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int    ft_strlcat(char *dest, char *src, unsigned int size)
+size_t    ft_strlcat(char *dest, char *src, size_t size)
 {
     size_t  i;
     size_t  j;

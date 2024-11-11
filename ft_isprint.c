@@ -6,25 +6,15 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:18:02 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/05 18:24:38 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/11 12:59:32 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_isprint(char *str)
+int    ft_isprint(char str)
 {
-    size_t    i;
-
-    i = 0;
-    if (str[i] == '\0')
+    if (str >= ' ' && str <= '~')
         return (1);
-    while (str[i] != '\0')
-    {
-        if (str[i] >= ' ' && str[i] <= '~')
-            i++;
-        else
-            return (0);
-    }
-    return (1);
+    return (0);
 }
