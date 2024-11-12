@@ -6,23 +6,15 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:28 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 14:32:38 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 13:43:03 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_tolower(char* str)
+char	ft_toupper(char str)
 {
-    size_t i;
-
-    i = 0;
-
-    while (str[i])
-    {
-        if (str[i] >= 'a' && str[i] <= 'z')
-            str[i] = str[i] - 32 ;
-        i++;
-    }
-    return (str);
+	if (str >= 'a' && str <= 'z')
+		str = str - 32;
+	return (str);
 }

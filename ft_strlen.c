@@ -6,19 +6,17 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:56:51 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/08 09:48:24 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 13:43:19 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
-	size_t  i;
+	size_t	i;
 
 	i = 0;
-
 	while (str[i])
 	{
 		i++;

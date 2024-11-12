@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:31:39 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/11 12:32:17 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 13:43:08 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t		i;
-	size_t		j;
-	char		*new;
+	size_t	i;
+	size_t	j;
+	char	*new;
 
 	if (!s)
 		return (NULL);
@@ -40,42 +40,48 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 
 /*#include <stdio.h>
-int main(void)
+int	main(void)
 {
-    char    *str = "Hello, world!";
-    char    *substr;
+	char    *str = "Hello, world!";
+	char    *substr;
 
-    // Test 1: Extraire "Hello"
-    substr = ft_substr(str, 0, 5);
-    if (substr)
-    {
-        printf("Sous-chaîne extraite : %s\n", substr);  // Devrait afficher "Hello"
-        free(substr);  // Libération de la mémoire
-    }
+	// Test 1: Extraire "Hello"
+	substr = ft_substr(str, 0, 5);
+	if (substr)
+	{
+		printf("Sous-chaîne extraite : %s\n", substr); 
+			// Devrait afficher "Hello"
+		free(substr);  // Libération de la mémoire
+	}
 
-    // Test 2: Extraire ", world"
-    substr = ft_substr(str, 5, 7);
-    if (substr)
-    {
-        printf("Sous-chaîne extraite : %s\n", substr);  // Devrait afficher ", world"
-        free(substr);
-    }
+	// Test 2: Extraire ", world"
+	substr = ft_substr(str, 5, 7);
+	if (substr)
+	{
+		printf("Sous-chaîne extraite : %s\n", substr);  // Devrait afficher ",
+			world"
+		free(substr);
+	}
 
-    // Test 3: Demander une sous-chaîne trop longue (au-delà de la fin de la chaîne)
-    substr = ft_substr(str, 7, 100);  // La longueur est plus grande que la longueur restante
-    if (substr)
-    {
-        printf("Sous-chaîne extraite : %s\n", substr);  // Devrait afficher "world!"
-        free(substr);  // Libération de la mémoire
-    }
+	// Test 3: Demander une sous-chaîne trop longue (au-delà de la fin de la chaîne)
+	substr = ft_substr(str, 7, 100); 
+		// La longueur est plus grande que la longueur restante
+	if (substr)
+	{
+		printf("Sous-chaîne extraite : %s\n", substr); 
+			// Devrait afficher "world!"
+		free(substr);  // Libération de la mémoire
+	}
 
-    // Test 4: Demander une sous-chaîne à partir de la fin de la chaîne
-    substr = ft_substr(str, 13, 5);  // Au-delà de la fin, devrait retourner une chaîne vide
-    if (substr)
-    {
-        printf("Sous-chaîne extraite : '%s'\n", substr);  // Devrait afficher une chaîne vide
-        free(substr);  // Libération de la mémoire
-    }
+	// Test 4: Demander une sous-chaîne à partir de la fin de la chaîne
+	substr = ft_substr(str, 13, 5);  // Au-delà de la fin,
+		devrait retourner une chaîne vide
+	if (substr)
+	{
+		printf("Sous-chaîne extraite : '%s'\n", substr); 
+			// Devrait afficher une chaîne vide
+		free(substr);  // Libération de la mémoire
+	}
 
-    return 0;
+	return (0);
 }*/

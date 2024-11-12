@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:32:30 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/11 10:33:56 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 13:43:24 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,18 +43,20 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 int	main(void)
 {
-    char *s1 = "Hello, ";
-    char *s2 = "YO LE RAP!";
-    char *result;
-    result = ft_strjoin(s1, s2);
+	char	*s1;
+	char	*s2;
+	char	*result;
 
-    if (result)
-    {
-        printf("Résultat de ft_strjoin : %s\n", result);
-        free(result);
-    {
-        printf("Erreur d'allocation de mémoire\n");
-    }
-    return (0);
+	s1 = "Hello, ";
+	s2 = "YO LE RAP!";
+	result = ft_strjoin(s1, s2);
+	if (result)
+	{
+		printf("Résultat de ft_strjoin : %s\n", result);
+		free(result);
+	{
+		printf("Erreur d'allocation de mémoire\n");
+	}
+	return (0);
 }
 */
