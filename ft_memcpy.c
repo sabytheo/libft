@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:06:07 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:57 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 16:29:55 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	chardest = (char *)dest;
 	charsrc = (const char *)src;
+	if (!chardest && !charsrc)
+		return (NULL);
 	while (i < n)
 	{
 		chardest[i] = charsrc[i];

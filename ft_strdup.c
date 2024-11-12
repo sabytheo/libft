@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:05:21 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:28 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 17:19:35 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,15 @@
 
 char	*ft_strdup(char *src)
 {
-	char *dest;
-	size_t i;
-	int srclen;
+	char	*dest;
+	size_t	i;
+	int		srclen;
 
 	srclen = ft_strlen(src);
 	i = 0;
-	dest = (char *)malloc(srclen * sizeof(char));
+	dest = (char *)malloc((srclen + 1) * sizeof(char));
+	if (!dest)
+		return (NULL);
 	while (src[i])
 	{
 		dest[i] = src[i];

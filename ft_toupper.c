@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:28 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:03 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 18:36:19 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_toupper(char str)
+int	ft_toupper(int str)
 {
 	if (str >= 'a' && str <= 'z')
 		str = str - 32;

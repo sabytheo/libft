@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:36 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:05 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/12 18:36:25 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_tolower(char str)
+int	ft_tolower(int str)
 {
 	if (str >= 'A' && str <= 'Z')
 		str = str + 32;
