@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:34:36 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 20:06:06 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/13 09:54:51 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_strlonlen(long nb)
 	int	i;
 
 	i = 0;
+	if (nb == 0)
+		i = 1;
 	if (nb < 0)
 	{
 		nb = nb * -1;
@@ -45,7 +47,6 @@ char	*ft_itoa(int n)
 	if (nbr == 0)
 	{
 		str[0] = '0';
-		return (str);
 	}
 	if (nbr < 0)
 	{
@@ -59,9 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
-int	main (void)
-{
-	printf("%s", ft_itoa(-2147483648));
-}
-*/
