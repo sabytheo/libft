@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:36:04 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/13 13:00:56 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/13 18:27:38 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,16 @@ avec une variable non pointeur.*/
 /* "->" est utiliser lorsqu'il y'a un pointeur,
  ce qui combine deferencement et acces en une operation
 */
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	t_list	*albert;
+// 	t_list	*albert2;
+// 	t_list	*jdshf;
+
+// 	albert = ft_lstnew("asdasd");
+// 	albert2 = ft_lstnew("hjhg");
+// 	albert->next = albert2;
+// 	printf("%s", (char *)jdshf->content);
+// }

@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:38:29 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/13 15:26:03 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/13 15:29:59 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			temp->next = new;
 		}
 	}
+	return ;
 }
