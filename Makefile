@@ -6,7 +6,7 @@
 #    By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 12:50:41 by tsaby             #+#    #+#              #
-#    Updated: 2024/11/12 16:41:53 by tsaby            ###   ########.fr        #
+#    Updated: 2024/11/13 11:49:31 by tsaby            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,11 +46,24 @@ SRCS		:= \
 					ft_tolower.c\
 					ft_toupper.c\
 
+SRC_B		:= \
+					ft.lstnew.c\
+					ft.lstadd_front.c\
+					ft.lstsize.c\
+					ft.lstlast.c\
+					ft.lstadd_back.c\
+					ft.lstdelone.c\
+					ft.lstclear.c\
+					ft.lstiter.c\
+					ft.lstmap.c\
+
 SRCS_D		:=	#
 
-OBJS_D		:=
+OBJS_D		:=	objs/
 
 OBJS		:=	$(SRCS:%.c=$(OBJS_D)%.o)
+
+OBJS_B		:=	$(SRC_B:%.c=$(OBJS_D)%.o)
 
 HEAD		:=	libft.h
 
@@ -64,6 +77,9 @@ NAME		:=	libft.a
 
 all			:	$(NAME)
 
+bonus		:	$(OBJS) $(OBJS_B)
+					$(AR) $(NAME) $(OBJS) $(OBJS_B)
+
 $(NAME)		:	$(OBJS_D) $(OBJS) Makefile
 					$(AR) -o $(NAME) $(OBJS)
 
@@ -74,11 +90,11 @@ $(OBJS_D)	:
 				@mkdir -p $(OBJS_D)
 
 clean		:
-				$(RM) -r $(OBJS) $(OBJS_D)
+				$(RM) -r $(OBJS) $(OBJS_D) $(OBJS_B)
 
 fclean		:	clean
 				$(RM) $(NAME)
 
 re			:	fclean all
 
-.PHONY:	all clean fclean re
+.PHONY:	all bonus clean fclean re
