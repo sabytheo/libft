@@ -6,7 +6,7 @@
 #    By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 12:50:41 by tsaby             #+#    #+#              #
-#    Updated: 2024/11/13 11:49:31 by tsaby            ###   ########.fr        #
+#    Updated: 2024/11/13 12:29:06 by tsaby            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,15 +47,15 @@ SRCS		:= \
 					ft_toupper.c\
 
 SRC_B		:= \
-					ft.lstnew.c\
-					ft.lstadd_front.c\
-					ft.lstsize.c\
-					ft.lstlast.c\
-					ft.lstadd_back.c\
-					ft.lstdelone.c\
-					ft.lstclear.c\
-					ft.lstiter.c\
-					ft.lstmap.c\
+					ft_lstnew.c\
+					ft_lstadd_front.c\
+					ft_lstsize.c\
+					ft_lstlast.c\
+					ft_lstadd_back.c\
+					ft_lstdelone.c\
+					ft_lstclear.c\
+					ft_lstiter.c\
+					ft_lstmap.c\
 
 SRCS_D		:=	#
 
@@ -77,13 +77,16 @@ NAME		:=	libft.a
 
 all			:	$(NAME)
 
-bonus		:	$(OBJS) $(OBJS_B)
+bonus		:	$(OBJS_B)
 					$(AR) $(NAME) $(OBJS) $(OBJS_B)
 
 $(NAME)		:	$(OBJS_D) $(OBJS) Makefile
-					$(AR) -o $(NAME) $(OBJS)
+					$(AR) $(NAME) $(OBJS)
 
 $(OBJS)		:	$(OBJS_D)%.o: $(SRCS_D)%.c $(HEAD)
+				$(CC) $(CFLAGS) -I$(HEAD_D) -c $< -o $@
+
+$(OBJS_B)		:	$(OBJS_D)%.o: $(SRCS_D)%.c $(HEAD)
 				$(CC) $(CFLAGS) -I$(HEAD_D) -c $< -o $@
 
 $(OBJS_D)	:

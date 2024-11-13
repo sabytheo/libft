@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:31:39 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:08 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/13 14:55:56 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	main(void)
 	substr = ft_substr(str, 0, 5);
 	if (substr)
 	{
-		printf("Sous-chaîne extraite : %s\n", substr); 
+		printf("Sous-chaîne extraite : %s\n", substr);
 			// Devrait afficher "Hello"
 		free(substr);  // Libération de la mémoire
 	}
@@ -64,11 +64,11 @@ int	main(void)
 	}
 
 	// Test 3: Demander une sous-chaîne trop longue (au-delà de la fin de la chaîne)
-	substr = ft_substr(str, 7, 100); 
+	substr = ft_substr(str, 7, 100);
 		// La longueur est plus grande que la longueur restante
 	if (substr)
 	{
-		printf("Sous-chaîne extraite : %s\n", substr); 
+		printf("Sous-chaîne extraite : %s\n", substr);
 			// Devrait afficher "world!"
 		free(substr);  // Libération de la mémoire
 	}
@@ -78,7 +78,7 @@ int	main(void)
 		devrait retourner une chaîne vide
 	if (substr)
 	{
-		printf("Sous-chaîne extraite : '%s'\n", substr); 
+		printf("Sous-chaîne extraite : '%s'\n", substr);
 			// Devrait afficher une chaîne vide
 		free(substr);  // Libération de la mémoire
 	}

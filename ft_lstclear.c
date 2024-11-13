@@ -6,8 +6,14 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:40:11 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/13 10:40:14 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/13 15:03:02 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	ft_lstdelone((void *)*lst, del);
+	*lst = NULL;
+}

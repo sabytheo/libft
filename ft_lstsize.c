@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:37:07 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/13 11:20:09 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/13 13:35:53 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (lst[i])
+	if(!lst)
+		return (0);
+	while (lst != NULL)
 	{
+		lst = lst->next;
 		i++;
 	}
 	return (i);
