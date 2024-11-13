@@ -6,7 +6,7 @@
 #    By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 12:50:41 by tsaby             #+#    #+#              #
-#    Updated: 2024/11/13 12:29:06 by tsaby            ###   ########.fr        #
+#    Updated: 2024/11/13 19:17:24 by tsaby            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,16 +77,13 @@ NAME		:=	libft.a
 
 all			:	$(NAME)
 
-bonus		:	$(OBJS_B)
-					$(AR) $(NAME) $(OBJS) $(OBJS_B)
+bonus		:
+				@make SRCS="$(SRCS) $(SRC_B)"
 
 $(NAME)		:	$(OBJS_D) $(OBJS) Makefile
 					$(AR) $(NAME) $(OBJS)
 
 $(OBJS)		:	$(OBJS_D)%.o: $(SRCS_D)%.c $(HEAD)
-				$(CC) $(CFLAGS) -I$(HEAD_D) -c $< -o $@
-
-$(OBJS_B)		:	$(OBJS_D)%.o: $(SRCS_D)%.c $(HEAD)
 				$(CC) $(CFLAGS) -I$(HEAD_D) -c $< -o $@
 
 $(OBJS_D)	:
