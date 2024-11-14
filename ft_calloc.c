@@ -6,13 +6,11 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:12:10 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/11 13:47:48 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/14 12:41:43 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -24,23 +22,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(mall, nmemb * size);
 	return (mall);
 }
-
-/*int	main (void)
-{
-	size_t nmemb = 5;
-	size_t size = sizeof(int);
-	size_t i = 0;
-
-	int *arr = (int *)ft_calloc(nmemb, size);
-
-	printf("Valeurs dans le tableau initialisé par ft_calloc :\n");
-	while( i++ < nmemb)
-	{
-		printf("arr[%zu] = %d\n", i, arr[i]);
-	}
-
-	free(arr);
-	return (0);
-
-}
-*/

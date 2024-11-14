@@ -6,13 +6,13 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:34:36 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/13 09:54:51 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/14 16:04:04 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlonlen(long nb)
+static int	ft_strlonlen(long nb)
 {
 	int	i;
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 
 	nbr = n;
 	i = ft_strlonlen(nbr);
-	str = (char *)malloc((i + 1) * sizeof(char));
+	str = malloc((i + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	str[i--] = '\0';

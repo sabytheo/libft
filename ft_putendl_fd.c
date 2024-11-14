@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:37:01 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:34 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/14 16:03:49 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-/*int	main (void)
-{
-	ft_putendl_fd("yo le rap", 1);
-	ft_putendl_fd("yo le rap error", 2);
-	return (0);
-}*/
