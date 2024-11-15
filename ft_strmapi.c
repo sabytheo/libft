@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:35:03 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 13:43:17 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/15 11:52:44 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,31 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-#include <ctype.h>
-#include <stdio.h>
-
-char	alternate_case(unsigned int i, char c) {
-	if (i % 2 == 0)
-		return (toupper(c));
-	else
-		return (tolower(c));
-}
-
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
-
-int	main(void) {
-	char *str = "Yo le rap";
-	char *result;
-	result = ft_strmapi(str, alternate_case);
-
-	if (result) {
-		printf("Original: %s\n", str);
-		printf("Modified: %s\n", result);
-		free(result);
-	} else {
-		printf("Erreur d'allocation de mémoire.\n");
-	}
-	return (0);
-} */

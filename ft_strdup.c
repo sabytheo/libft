@@ -6,18 +6,17 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:05:21 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/12 17:19:35 by tsaby            ###   ########.fr       */
+/*   Updated: 2024/11/15 10:40:38 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(char *src)
 {
 	char	*dest;
 	size_t	i;
-	int		srclen;
+	size_t	srclen;
 
 	srclen = ft_strlen(src);
 	i = 0;
@@ -30,5 +29,5 @@ char	*ft_strdup(char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return (&dest[0]);
+	return (dest);
 }
