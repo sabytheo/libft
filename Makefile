@@ -6,7 +6,7 @@
 #    By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 12:50:41 by tsaby             #+#    #+#              #
-#    Updated: 2024/11/14 15:38:34 by tsaby            ###   ########.fr        #
+#    Updated: 2024/11/18 16:34:37 by tsaby            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,6 @@ SRCS_D		:=	#
 OBJS_D		:=	objs/
 
 OBJS		:=	$(SRCS:%.c=$(OBJS_D)%.o)
-
-OBJS_B		:=	$(SRC_B:%.c=$(OBJS_D)%.o)
 
 HEAD		:=	libft.h
 
