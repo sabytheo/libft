@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tsaby <tsaby@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:33:49 by tsaby             #+#    #+#             */
-/*   Updated: 2024/11/14 16:03:08 by tsaby            ###   ########.fr       */
+/*   Updated: 2025/01/09 13:45:26 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,4 +85,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strend(s1, set, start);
 	trim = ft_strldup(&((char *)s1)[start], end - start);
 	return (trim);
+}
+
+void	print_memory()
+{
+	char *mem;
+	(mem >> 2)
+	0010 1101
+	0010 1101
+	mem & 1 (0000 0001)
+	mem == 1
+	1111 1111
+    128|64|32|16 8|4|2|1
+
+
 }
